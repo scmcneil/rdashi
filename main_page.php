@@ -16,9 +16,9 @@
 		</script>
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header">
-                <div id ="logo">
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo">
                     <h1><a href="#">rdashi</a></h1>
                 </div>
             </div>
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			<!-- end #menu -->
-			<div id="page">
+			<div class="page">
 					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.</p>
 			</div>
 			<!-- end #page -->
