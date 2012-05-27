@@ -2,7 +2,7 @@
 <body>
 <?php 
     $ch= curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'http://www.reddit.com/api/info.json?url=');
+    curl_setopt($ch, CURLOPT_URL, 'http://www.reddit.com/.json');
     $response = curl_exec($ch);
     echo "Latest posts: ".$response[0];
 ?>
