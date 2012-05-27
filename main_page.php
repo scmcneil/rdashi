@@ -8,54 +8,10 @@
         <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 		<script>
-			function hideall()
+			function pointer(tf)
 			{
-				document.getElementById('content_home').style.display="none";
-				document.getElementById('content_button_uno').style.display="none";
-				document.getElementById('content_button_dos').style.display="none";
-				document.getElementById('content_button_tres').style.display="none";
-			}
-			function banner_click(buttont)
-			{
-				if(button == 'home')
-				{
-					hideall();
-					document.getElementById('content_home').style.display="block";
-					HashSearch.set('page', 'home');
-				}
-				if(button == 'button_uno')
-				{
-					hideall();
-					document.getElementById('content_button_uno').style.display="block";
-					HashSearch.set('page', 'button_uno');
-				}
-				if(button == 'button_dos')
-				{
-					hideall();
-					document.getElementById('content_button_dos').style.display="none";
-					HashSearch.set('page', 'button_dos');
-				}
-				if(button == 'button_tres')
-				{
-					hideall();
-					document.getElementById('content_button_tres').style.display="block";
-					HasSearch.set('page', 'button_tres');
-				}
-				window.onload = function()
-				{
-					hideall();
-					var page = 'home';
-					if(HashSearch.keyExists('page'))
-					{
-						page = HashSearch>get('page');
-					}
-					banner_click(page);
-				}
-				function pointer(tf)
-				{
-					if(tf) document.body.style.cursor='pointer';
-					else document.body.style.cursor='auto';
-				}
+				if(tf) document.body.style.cursor='pointer';
+				else document.body.style.cursor='auto';
 			}
 		</script>
     </head>
@@ -66,26 +22,28 @@
                     <h1><a href="#">rdashi</a></h1>
                 </div>
             </div>
-        </div>
-		<!-- end #header -->
-		<div class="menu">
-			<div class="menuItem" id="Home" onclick="banner_click('home') onmouseover="pointer(true)" onmouseout="pointer(false)">
-			Home
+			<!-- end #header -->
+			<div class="menu">
+				<div class="menuItem" id="Home" onmouseover="pointer(true)" onmouseout="pointer(false)">
+				Home
+				</div>
+				<div class="menuItem" id="Button_uno" onmouseover="pointer(true)" onmouseout="pointer(false)">
+				Button_uno
+				</div>
+				<div class="menuItem" id="Button_dos" onmouseover="pointer(true)" onmouseout="pointer(false)">
+				Button_dos
+				</div>
+				<div class="menuItem" id="Button_tres" onmouseover="pointer(true)" onmouseout="pointer(false)">
+				Button_tres
+				</div>
 			</div>
-			<div class="menuItem" id="Button_uno" onclick="banner_click('button_uno') onmouseover="pointer(true)" onmouseout="pointer(false)">
-			Button_uno
+			<!-- end #menu -->
+			<div id="page">
+				<div style='width:100%'>
+					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.</p>
+				</div>
 			</div>
-			<div class="menuItem" id="Button_dos" onclick="banner_click('button_dos') onmouseover="pointer(true)" onmouseout="pointer(false)">
-			Button_dos
-			</div>
-			<div class="menuItem" id="Button_tres" onclick="banner_click('button_tres') onmouseover="pointer(true)" onmouseout="pointer(false)">
-			Button_tres
-			</div>
+			<!-- end #page -->
 		</div>
-		<!-- end #menu -->
-		<div id="page">
-		
-		</div>
-		<!-- end #page -->
     </body>
 </html>

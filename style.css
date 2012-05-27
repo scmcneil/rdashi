@@ -1,0 +1,46 @@
+a{
+	text-decoration: none;
+}
+.wrapper
+{
+	font-family: sans-serif;
+	width:	100%;
+	margin: 0px auto;
+}
+.header
+{
+	background-color: #EEEEEE;
+	color: #D6ADD6;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.menu
+{
+	background-color: purple;
+	width: auto;
+	overflow: hidden;
+}
+.menuItem
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: black;
+	background-color: purple;
+	float: left;
+}
+.menuItem:hover
+{
+	background-color: #EEEEEE;
+	color: grey;
+}
+.page
+{
+	background-color: #D6ADD6; 
+	padding: 10px;
+	display: block;
+	overflow: hidden;
+}
