@@ -1,7 +1,5 @@
-<html>
-<body>
 <?php 
-    function get_reddit_item( $index, $subreddit ){
+    function get_reddit_item( $subreddit, $index ){
         $ch= curl_init();
         $url = null;
         if( $subreddit ){
@@ -43,5 +41,3 @@
 
 
 ?>
-</body>
-</html>
