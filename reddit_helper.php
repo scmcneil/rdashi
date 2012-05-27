@@ -1,23 +1,36 @@
 <html>
 <body>
 <?php 
-    $ch= curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'http://www.reddit.com/.json');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $response = curl_exec($ch);
-    $a  = json_decode( $response, $assoc=true );
-    echo '<br> <br> <br>';
-    $a = $a["data"];
-    $a = $a["children"];
-    $a = $a[5];
-    $a = $a["data"];
-    $a = $a["title"];
-    var_dump($a);
+    function get_reddit_item( $index, $subreddit ){
+        $ch= curl_init();
+        $url = null;
+        if( $subreddit ){
+            $url = 'http://www.reddit.com/' + $subreddit + '/.json';
+        }
+        else{
+            $url = 'http://www.reddit.com/.json';
+        }
+            
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $response = curl_exec($ch);
+        $a  = json_decode( $response, $assoc=true );
+        $a = $a["data"];
+        $a = $a["children"];
+        $a = $a[$index];
+        $a = $a["data"];
+        $title = $a["title"];
+        $image = $a["url"];
 
-    curl_close($ch);
-    echo '<br> <br> <br>';
+        if( !$image ) return null;
+
+        $item = "<div id='item'>" + $title + "<br>" + $image + "</div>";
+
+        curl_close($ch);
+
+        return $item;
+    }
 
 ?>
-<a> STUFF! </a>
 </body>
 </html>
