@@ -22,6 +22,11 @@
 
         if( !$image ) return null;
 
+        $image_request = "http://api.imgur.com/oembed?url=:" + $image;
+        curl_setopt($ch, CURLOPT_URL, $image_request);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $image_response = curl_exec($ch);
+
         $item = "<div id='item'>" + $title + "<br>" + $image + "</div>";
 
         curl_close($ch);
