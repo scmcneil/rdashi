@@ -18,11 +18,13 @@
         </div>
 		<!-- end #header -->
 		<div id="menu">
-			<li class-"current_page_item"><a href="#">Homeage</a></li>
-			<li><a href="#">Button_uno</a></li>
-			<li><a href="#">Button_dos</a></li>
-			<li><a href="#">Button_tres</a></li>
-			<li><a href="#">Button_quatro</a></li>
+			<ul>
+				<li class-"current_page_item"><a href="#">Homeage</a></li>
+				<li><a href="#">Button_uno</a></li>
+				<li><a href="#">Button_dos</a></li>
+				<li><a href="#">Button_tres</a></li>
+				<li><a href="#">Button_quatro</a></li>
+			</ul>
 		</div>
 		<!-- end #menu -->
 		<div id="page">
