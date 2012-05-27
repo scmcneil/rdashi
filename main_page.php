@@ -12,9 +12,22 @@
         <div id="wrapper">
             <div id="header">
                 <div id ="logo">
-                    <h1><a href='#'>rdashi</a></h1>
+                    <h1><a href="#">rdashi</a></h1>
                 </div>
             </div>
         </div>
+		<!-- end #header -->
+		<div id="menu">
+			<li class-"current_page_item"><a href="#">Homeage</a></li>
+			<li><a href="#">Button_uno</a></li>
+			<li><a href="#">Button_dos</a></li>
+			<li><a href="#">Button_tres</a></li>
+			<li><a href="#">Button_quatro</a></li>
+		</div>
+		<!-- end #menu -->
+		<div id="page">
+		
+		</div>
+		<!-- end #page -->
     </body>
 </html>
