@@ -69,16 +69,16 @@
         </div>
 		<!-- end #header -->
 		<div class="menu">
-			<div class="menuItem" id="Home" onmouseover="pointer(true)" onmouseout="pointer(false)">
+			<div class="menuItem" id="Home" onclick="banner_click('home') onmouseover="pointer(true)" onmouseout="pointer(false)">
 			Home
 			</div>
-			<div class="menuItem" id="Button_uno" onmouseover="pointer(true)" onmouseout="pointer(false)">
+			<div class="menuItem" id="Button_uno" onclick="banner_click('button_uno') onmouseover="pointer(true)" onmouseout="pointer(false)">
 			Button_uno
 			</div>
-			<div class="menuItem" id="Button_dos" onmouseover="pointer(true)" onmouseout="pointer(false)">
+			<div class="menuItem" id="Button_dos" onclick="banner_click('button_dos') onmouseover="pointer(true)" onmouseout="pointer(false)">
 			Button_dos
 			</div>
-			<div class="menuItem" id="Button_tres" onmouseover="pointer(true)" onmouseout="pointer(false)">
+			<div class="menuItem" id="Button_tres" onclick="banner_click('button_tres') onmouseover="pointer(true)" onmouseout="pointer(false)">
 			Button_tres
 			</div>
 		</div>
