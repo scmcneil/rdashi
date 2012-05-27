@@ -1,0 +1,10 @@
+<html>
+<body>
+<?php 
+	require_once("reddit.php");
+	$reddit = new reddit();
+	$response = $reddit->getListing("technology", 5);
+	echo $response;
+?>
+</body>
+</html>
