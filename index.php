@@ -1,11 +1,10 @@
 <html>
 <body>
 <?php 
-	require_once("reddit.php");
-	$reddit = new reddit("radashi", "tcsmjc");
-	print_r(error_get_last());
-//	$response = $reddit->getListing("technology", 5);
-//	echo $response;
+    $ch= curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'http://www.reddit.com/api/info.json?url=');
+    $response = curl_exec($ch);
+    echo "Latest posts: ".$response[0];
 ?>
 <a> STUFF! </a>
 </body>
