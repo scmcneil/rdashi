@@ -30,6 +30,17 @@
 
         return $item;
     }
+	function print_subreddit( $subreddit )
+	{
+		$payload = "";
+		for( $i=0; $i<25; $i++)
+		{
+		    $payload .= get_reddit_item( $subreddit, $i);
+		}
+		return $payload;	
+	}
+
+
 
 ?>
 </body>
