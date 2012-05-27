@@ -3,7 +3,7 @@
         $ch= curl_init();
         $url = null;
         if( $subreddit ){
-            $url = 'http://www.reddit.com/' + $subreddit + '/.json';
+            $url = 'http://www.reddit.com/r/' + $subreddit + '/.json';
         }
         else{
             $url = 'http://www.reddit.com/.json';
